@@ -1,5 +1,5 @@
 {
-  "name": "@knnect/mock-oas",
+  "name": "prism-multi-mock-oas",
   "version": "1.0.0",
   "description": "Mock multiple OAS",
   "main": "./dist/index.js",
@@ -9,7 +9,7 @@
     "dist"
   ],
   "bin": {
-    "knnect-mock-oas": "./bin/cli.js"
+    "multi-mock-oas": "./bin/cli.js"
   },
   "scripts": {
     "start:dev": "webpack --mode=development --progress",
@@ -25,10 +25,10 @@
   "author": "Kasun Thennakoon",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tmkasun/",
+    "url": "https://github.com/tmkasun/prism-multi-oas-server",
     "email": "tmkasun@live.com"
   },
-  "homepage": "https://github.com/GeorgianStan/framework-for-building-libraries#readme",
+  "homepage": "https://github.com/tmkasun/prism-multi-oas-server#readme",
   "dependencies": {
     "@stoplight/http-spec": "^4.2.0",
     "@stoplight/json": "^3.17.0",
