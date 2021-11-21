@@ -1,0 +1,71 @@
+{
+  "name": "@knnect/mock-oas",
+  "version": "1.0.0",
+  "description": "Mock multiple OAS",
+  "main": "./dist/index.js",
+  "types": "./dist/src/*.d.ts",
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "bin": {
+    "knnect-mock-oas": "./bin/cli.js"
+  },
+  "scripts": {
+    "start:dev": "webpack --mode=development --progress",
+    "build:prod": "rm -R dist/*; webpack --mode=production",
+    "prepublishOnly": "webpack --mode=production",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\"",
+    "lint:fix": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage"
+  },
+  "author": "Kasun Thennakoon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tmkasun/",
+    "email": "tmkasun@live.com"
+  },
+  "homepage": "https://github.com/GeorgianStan/framework-for-building-libraries#readme",
+  "dependencies": {
+    "@stoplight/http-spec": "^4.2.0",
+    "@stoplight/json": "^3.17.0",
+    "@stoplight/json-schema-ref-parser": "9.2.1",
+    "@stoplight/prism-core": "^4.6.0",
+    "@stoplight/prism-http": "^4.6.0",
+    "@stoplight/prism-http-server": "^4.6.0",
+    "@stoplight/types": "^12.2.0",
+    "chalk": "^4.1.2",
+    "fp-ts": "^2.11.5",
+    "json-schema-faker": "0.5.0-rcv.40",
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.5",
+    "pino": "^6.13.3",
+    "pino-pretty": "^7.2.0",
+    "signale": "^1.4.0",
+    "split2": "^3.2.2",
+    "uri-template-lite": "^20.5.0",
+    "urijs": "^1.19.7",
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.19",
+    "@typescript-eslint/eslint-plugin": "^4.10.0",
+    "@typescript-eslint/parser": "^4.10.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "ts-jest": "^26.4.4",
+    "ts-loader": "^8.0.12",
+    "tslib": "^2.3.1",
+    "type-fest": "^2.5.2",
+    "typescript": "^4.4.4",
+    "webpack": "^5.11.0",
+    "webpack-cli": "^4.2.0"
+  }
+}

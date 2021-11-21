@@ -1,0 +1,81 @@
+{
+  "$schema": "node_modules/@openapitools/openapi-generator-cli/config.schema.json",
+  "spaces": 2,
+  "generator-cli": {
+    "version": "5.2.1",
+    "generators": {
+      "Publisher": {
+        "generatorName": "typescript-axios",
+        "glob": "",
+        "context": "/am/publisher/2.0",
+        "inputSpec": "https://apim.preview-dv.choreo.dev/api/am/devportal/v2/apis/6166b1a7d1906b60f2f51058/swagger?environmentName=control-plane&organizationId=783c6c4d-8b9b-4190-b70a-e717ab1ee739",
+        "output": "#{cwd}../../src/types/generated/Publisher",
+        "additionalProperties": {
+          "withSeparateModelsAndApi": true,
+          "supportsES6": true,
+          "withInterfaces": true,
+          "apiPackage": "api",
+          "modelPackage": "models",
+          "apis": ""
+        },
+        "globalProperty": {
+          "models": ""
+        }
+      },
+      "BallerinaCentral": {
+        "generatorName": "typescript-axios",
+        "glob": "",
+        "context": "/marketplace/1.0",
+        "inputSpec": "https://app.choreo.dev/apim/proxy/api/am/devportal/v2/apis/6152bfcf9ebadb7585d2350c/swagger?organizationId=03ffe15a-ff94-4711-ad21-5dc4ffb7761b",
+        "output": "#{cwd}../../src/types/generated/BallerinaCentral",
+        "additionalProperties": {
+          "withSeparateModelsAndApi": true,
+          "supportsES6": true,
+          "withInterfaces": true,
+          "apiPackage": "api",
+          "modelPackage": "models",
+          "apis": ""
+        },
+        "globalProperty": {
+          "models": ""
+        }
+      },
+      "BillingNSubscription": {
+        "generatorName": "typescript-axios",
+        "glob": "",
+        "context": "/billing/1.0.1",
+        "inputSpec": "https://apim.preview-dv.choreo.dev/api/am/devportal/v2/apis/61656f2f32b747426c10ec25/swagger?environmentName=control-plane&organizationId=783c6c4d-8b9b-4190-b70a-e717ab1ee739",
+        "output": "#{cwd}../../src/types/generated/Billing",
+        "additionalProperties": {
+          "withSeparateModelsAndApi": true,
+          "supportsES6": true,
+          "withInterfaces": true,
+          "apiPackage": "api",
+          "modelPackage": "models",
+          "apis": ""
+        },
+        "globalProperty": {
+          "models": ""
+        }
+      },
+      "ObservabilityLogs": {
+        "generatorName": "typescript-axios",
+        "glob": "",
+        "context": "/observability/logging/0.1.0",
+        "inputSpec": "https://app.choreo.dev/apim/proxy/api/am/devportal/v2/apis/61553e1d5b307539b26d4e61/swagger?organizationId=03ffe15a-ff94-4711-ad21-5dc4ffb7761b",
+        "output": "#{cwd}../../src/types/generated/ObservabilityLogs",
+        "additionalProperties": {
+          "withSeparateModelsAndApi": true,
+          "supportsES6": true,
+          "withInterfaces": true,
+          "apiPackage": "api",
+          "modelPackage": "models",
+          "apis": ""
+        },
+        "globalProperty": {
+          "models": ""
+        }
+      }
+    }
+  }
+}
